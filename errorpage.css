@@ -1,0 +1,256 @@
+/*
+ * Copyright (C) 1996-2021 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ *
+ * Stylesheet for Squid Error pages
+ * Adapted from design by Free CSS Templates
+ * http://www.freecsstemplates.org
+ * Released for free under a Creative Commons Attribution 2.5 License
+ *
+ * With additions from @Jhey (404 Concept Page @property) on CodePen (https://codepen.io/jh3y/pen/MWbvzKb)
+ * and tweaks by Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net> (20231009)
+ *
+ * Further CSS/HTML tweaks distributed under a MIT license.
+ * See LICENSE for details, or https://gwyneth-llewelyn.mit-license.org/.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;300&display=swap");
+
+:root {
+	--button: #b3b3b3;
+	--button-color: #0a0a0a;
+	--shadow: #000;
+	--bg: #737373;
+	--header: #7a7a7a;
+	--color: #fafafa;
+	--lit-header: #e6e6e6;
+	--speed: 2s;
+}
+
+* {
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+}
+
+@property --swing-x {
+	initial-value: 0;
+	inherits: false;
+	syntax: '<integer>';
+}
+
+@property --swing-y {
+	initial-value: 0;
+	inherits: false;
+	syntax: '<integer>';
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--bg);
+	color: var(--color);
+	perspective: 1200px;
+}
+
+.mybutton a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: var(--button);
+	color: var(--button-color);
+	padding: 1rem 4rem;
+	border-radius: 4rem;
+	font-size: 0.875rem;
+	letter-spacing: 0.05rem;
+}
+
+p {
+	font-weight: 100;
+}
+
+.spotlight {
+	animation: swing var(--speed) infinite alternate ease-in-out;
+	font-size: clamp(5rem, 40vmin, 20rem);
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	margin-bottom: 1rem;
+	letter-spacing: 1rem;
+	transform: translate3d(0, 0, 0vmin);
+	--x: calc(50% + (var(--swing-x) * 0.5) * 1%);
+	background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
+	color: transparent;
+}
+
+.spotlight:after {
+	animation: swing var(--speed) infinite alternate ease-in-out;
+	content: "error";
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: var(--shadow);
+	filter: blur(1.5vmin);
+	transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
+}
+
+.cloak {
+	animation: swing var(--speed) infinite alternate-reverse ease-in-out;
+	height: 100%;
+	width: 100%;
+	transform-origin: 50% 30%;
+	transform: rotate(calc(var(--swing-x) * -0.25deg));
+	background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
+}
+
+.cloak__wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.cloak__container {
+	height: 250vmax;
+	width: 250vmax;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.info {
+	text-align: center;
+	line-height: 1.5;
+	max-width: clamp(16rem, 90vmin, 25rem);
+}
+
+.info>p {
+	margin-bottom: 3rem;
+}
+
+@keyframes swing {
+	0% {
+		--swing-x: -100;
+		--swing-y: -100;
+	}
+
+	50% {
+		--swing-y: 0;
+	}
+
+	100% {
+		--swing-y: -100;
+		--swing-x: 100;
+	}
+}
+
+
+/* Page basics */
+* {
+	font-family: Roboto, verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	font-size: 16pt;
+	color: var(--color);
+}
+
+body:lang(fa) {
+	direction: rtl;
+	font-size: 100%;
+	font-family: Tahoma, Roya, sans-serif;
+	float: right;
+}
+
+body:lang(he) {
+	direction: rtl;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('squid-now-logo.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: var(--color);
+}
+
+#titles h2 {
+	color: var(--color);
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color: #00ff00;
+	width: 100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: var(--bg);
+}
+
+/* General text */
+p {}
+
+/* error brief description */
+#error p {}
+
+/* some data which may have caused the problem */
+#data {}
+
+/* the error message received from the system or other software */
+#sysmsg {}
+
+pre {}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+	font-family: monospace;
+	color: var(--color);
+	font-size: 12pt;
+}
+
+#dirlisting {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#dirlisting tr.entry td.icon,
+td.filename,
+td.size,
+td.date {
+	border-bottom: groove;
+}
+
+#dirlisting td.size {
+	width: 50px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 10pt;
+	padding-left: 10px;
+}

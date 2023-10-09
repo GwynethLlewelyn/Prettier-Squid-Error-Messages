@@ -29,4 +29,4 @@ The actual reference to absolute URLs etc. is a bit mysterious and probably depe
 
 Squid Now logo is distributed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License.
 
-Squid 5.2 error messages are Copyright © 1996-2021 The Squid Software Foundation and contributors, and distributed with the source code under a GNU General Public License as published by the Free Software Foundation (version 2 or later).
+Squid 5.2 error messages are Copyright © 1996-2021 The Squid Software Foundation and contributors, and distributed with the source code under a GNU General Public License as published by the Free Software Foundation (version 2 or later). See also [original-files/COPYRIGHT](the original copyright file).2
