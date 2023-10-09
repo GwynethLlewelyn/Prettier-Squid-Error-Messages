@@ -231,6 +231,10 @@ pre {}
 	margin-right: 2%;
 }
 
+#dirlisting th {
+	white-space: nowrap;
+}
+
 #dirlisting tr.entry td.icon,
 td.filename,
 td.size,

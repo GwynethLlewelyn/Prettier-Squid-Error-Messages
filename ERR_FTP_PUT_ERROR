@@ -3,8 +3,11 @@
 <meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>ERROR: FTP upload failed</title>
-<link rel="stylesheet" type="text/css" media="all" href="errorpage.css">
-</head><body id="%c">
+<style>
+.spotlight:after { content: "error"; }
+</style>
+</head>
+<body id="%c">
 <div id="titles">
 <h1>ERROR</h1>
 <h2>FTP PUT upload failed</h2>
@@ -15,21 +18,31 @@
 <p>An FTP protocol error occurred while trying to retrieve the URL: <a href="%U">%U</a></p>
 
 <p>Squid sent the following FTP command:</p>
-<blockquote id="data">
+<blockquote id="data" class="spotlight">
 <pre>%f</pre>
 </blockquote>
-
+<div class="cloak__wrapper">
+            <div class="cloak__container">
+                <div class="cloak"></div>
+            </div>
+        </div>
+        <div class="info">
 <p>The server responded with:</p>
 <blockquote id="sysmsg">
 <pre>%F</pre>
 </blockquote>
-
+<div class="cloak__wrapper">
+            <div class="cloak__container">
+                <div class="cloak"></div>
+            </div>
+        </div>
+        <div class="info">
 <p>This means that the FTP server may not have permission or space to store the file. Check the path, permissions, diskspace and try again.</p>
 
 <p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
 <br>
 </div>
-
+</div>
 <hr>
 <div id="footer">
 <p>Generated %T by %h (%s)</p>

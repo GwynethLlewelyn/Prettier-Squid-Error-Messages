@@ -14,6 +14,7 @@ Only the English version has been done, as well as only the files for Squid 5.2,
 
 1. Dump the files into a directory you have control over (can/should be userland).
 2. Edit your system's `squid.conf` file and add the directive `error_directory` pointing to the directory you've placed the files in.
+3. On the same file, add the directive `err_page_stylesheet` and point it to the CSS file in this directory (`errorpage.css`).
 
 You can, if you wish, just do a `git clone https://github.com/GwynethLlewelyn/Prettier-Squid-Error-Messages` somewhere in userland, but you'll get the extra Git-specific files too (including this README!) which might not be necessary.
 

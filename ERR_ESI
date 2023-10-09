@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>ERROR: The requested URL could not be retrieved</title>
-<link rel="stylesheet" type="text/css" media="all" href="errorpage.css">
-</head><body id="%c">
-<div id="titles">
-<h1>ERROR</h1>
-<h2>The requested URL could not be retrieved</h2>
-</div>
-<hr>
+<html lang="en">
+<head>
+	<meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ERROR: The requested URL could not be retrieved</title>
+	<style>
+		.spotlight:after {
+			content: "ESI error";
+		}
+	</style>
+</head>
+<body id="%c">
+	<div id="titles">
+		<h1>ERROR</h1>
+		<h2>The requested URL could not be retrieved</h2>
+	</div>
+	<hr>
+	<div id="content">
+		<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
 
-<div id="content">
-<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
+		<blockquote id="error" class="spotlight">
+			<p><b>ESI Processing failed.</b></p>
+		</blockquote>
+		<div class="cloak__wrapper">
+			<div class="cloak__container">
+				<div class="cloak"></div>
+			</div>
+		</div>
+		<div class="info">
+			<p>The ESI processor returned:</p>
+			<blockquote id="data" class="spotlight">
+				<pre>%Z</pre>
+			</blockquote>
 
-<blockquote id="error">
-<p><b>ESI Processing failed.</b></p>
-</blockquote>
+			<p>This means that the surrogate was not able to process the ESI template. Please report this error to the webmaster.</p>
 
-<p>The ESI processor returned:</p>
-<blockquote id="data">
-<pre>%Z</pre>
-</blockquote>
-
-<p>This means that the surrogate was not able to process the ESI template. Please report this error to the webmaster.</p>
-
-<p>Your webmaster is <a href="mailto:%w">%w</a>.</p>
-<br>
-</div>
-
-<hr>
-<div id="footer">
-<p>Generated %T by %h (%s)</p>
-<!-- %c -->
-</div>
-</body></html>
+			<p>Your webmaster is <a href="mailto:%w">%w</a>.</p>
+			<br>
+		</div>
+	</div>
+	<hr>
+	<div id="footer">
+		<p>Generated %T by %h (%s)</p>
+		<!-- %c -->
+	</div>
+</body>
+</html>

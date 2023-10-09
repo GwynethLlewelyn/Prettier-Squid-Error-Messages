@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>ERROR: The requested URL could not be retrieved</title>
-<link rel="stylesheet" type="text/css" media="all" href="errorpage.css">
-</head><body id="%c">
-<div id="titles">
-<h1>ERROR</h1>
-<h2>The requested URL could not be retrieved</h2>
-</div>
-<hr>
+<html lang="en">
+<head>
+	<meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ERROR: The requested URL could not be retrieved</title>
+	<style>
+		.spotlight:after {
+			content: "invalid response";
+		}
+	</style>
+</head>
+<body id="%c">
+	<div id="titles">
+		<h1>ERROR</h1>
+		<h2>The requested URL could not be retrieved</h2>
+	</div>
+	<hr>
 
-<div id="content">
-<p><b>Invalid Response</b> error was encountered while trying to process the request:</p>
+	<div id="content">
+		<p><b>Invalid Response</b> error was encountered while trying to process the request:</p>
 
-<blockquote id="data">
-<pre>%R</pre>
-</blockquote>
+		<blockquote id="data" class="spotlight">
+			<pre>%R</pre>
+		</blockquote>
+		<div class="cloak__wrapper">
+			<div class="cloak__container">
+				<div class="cloak"></div>
+			</div>
+		</div>
+		<div class="info">
+			<p>The HTTP Response message received from the contacted server could not be understood or was otherwise malformed. Please contact the site operator.</p>
 
-<p>The HTTP Response message received from the contacted server could not be understood or was otherwise malformed. Please contact the site operator.</p>
+			<p>Your cache administrator may be able to provide you with more details about the exact nature of the problem if needed.</p>
 
-<p>Your cache administrator may be able to provide you with more details about the exact nature of the problem if needed.</p>
-
-<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-<br>
-</div>
-
-<hr>
-<div id="footer">
-<p>Generated %T by %h (%s)</p>
-<!-- %c -->
-</div>
-</body></html>
+			<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
+			<br>
+		</div>
+	</div>
+	<hr>
+	<div id="footer">
+		<p>Generated %T by %h (%s)</p>
+		<!-- %c -->
+	</div>
+</body>
+</html>

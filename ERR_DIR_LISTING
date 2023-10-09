@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Directory: %U</title>
-<link rel="stylesheet" type="text/css" media="all" href="errorpage.css">
-</head><body id="%c">
-<div id="titles">
-<h2>Directory: <a href="%U">%U</a>/</h2>
-</div>
-<hr>
+<html lang="en">
+<head>
+	<meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Directory: %U</title>
+	<style>
+		.spotlight:after {
+			content: "error";
+		}
+	</style>
+</head>
+<body id="%c">
+	<div id="titles">
+		<h2>Directory: <a href="%U">%U</a>/</h2>
+	</div>
+	<hr>
 
-<div id="content">
-<h4>Directory Content:</h4>
+	<div id="content">
+		<h4>Directory Content:</h4>
 
-<blockquote id="data">
-<pre id="dirmsg">%z</pre>
-</blockquote>
+		<blockquote id="data" class="spotlight">
+			<pre id="dirmsg">%z</pre>
+		</blockquote>
+		<div class="cloak__wrapper">
+			<div class="cloak__container">
+				<div class="cloak"></div>
+			</div>
+		</div>
+		<div class="info">
 
-<table id="dirlisting" summary="Directory Listing">
-<tr>
-<th><a href="../"><img border="0" src="/squid-internal-static/icons/silk/arrow_up.png" alt=""></a></th>
-<th nowrap="nowrap"><a href="../">Parent Directory</a> (<a href="/">Root Directory</a>)</th>
-</tr>
-
-%g
-
-</table>
-</div>
-
-<hr>
-<div id="footer">
-<p>Generated %T by %h (%s)</p>
-<!-- %c -->
-</div>
-</body></html>
+			<table id="dirlisting">
+				<caption>Directory Listing</caption>
+				<tr>
+					<th><a href="../">⬆︎</a></th>
+					<th><a href="../">Parent Directory</a> (<a href="/">Root Directory</a>)</th>
+				</tr>
+				%g
+			</table>
+		</div>
+	</div>
+	<hr>
+	<div id="footer">
+		<p>Generated %T by %h (%s)</p>
+		<!-- %c -->
+	</div>
+</body>
+</html>

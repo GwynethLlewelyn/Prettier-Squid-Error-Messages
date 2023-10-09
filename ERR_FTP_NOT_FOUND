@@ -3,8 +3,11 @@
 <meta name="copyright" content="Copyright © 1996-2023 The Squid Software Foundation and contributors">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>ERROR: The requested URL could not be retrieved</title>
-<link rel="stylesheet" type="text/css" media="all" href="errorpage.css">
-</head><body id="%c">
+<style>
+.spotlight:after { content: "error"; }
+</style>
+</head>
+<body id="%c">
 <div id="titles">
 <h1>ERROR</h1>
 <h2>The requested URL could not be retrieved</h2>
@@ -15,22 +18,32 @@
 <p>The following URL could not be retrieved: <a href="%U">%U</a></p>
 
 <p>Squid sent the following FTP command:</p>
-<blockquote id="data">
+<blockquote id="data" class="spotlight">
 <pre>%f</pre>
 </blockquote>
-
+<div class="cloak__wrapper">
+            <div class="cloak__container">
+                <div class="cloak"></div>
+            </div>
+        </div>
+        <div class="info">
 <p>The server responded with:</p>
 <blockquote id="sysmsg">
 <pre>%F</pre>
 <pre>%g</pre>
 </blockquote>
-
+<div class="cloak__wrapper">
+            <div class="cloak__container">
+                <div class="cloak"></div>
+            </div>
+        </div>
+        <div class="info">
 <p>This might be caused by an FTP URL with an absolute path (which does not comply with RFC 1738). If this is the cause, then the file can be found at <a href="%B">%B</a>.</p>
 
 <p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
 <br>
 </div>
-
+</div>
 <hr>
 <div id="footer">
 <p>Generated %T by %h (%s)</p>
