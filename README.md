@@ -30,4 +30,14 @@ The actual reference to absolute URLs etc. is a bit mysterious and probably depe
 
 Squid Now logo is distributed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License.
 
-Squid 5.2 error messages are Copyright © 1996-2021 The Squid Software Foundation and contributors, and distributed with the source code under a GNU General Public License as published by the Free Software Foundation (version 2 or later). See also [original-files/COPYRIGHT](the original copyright file).2
+Squid 5.2 error messages are Copyright © 1996-2021 The Squid Software Foundation and contributors, and distributed with the source code under a GNU General Public License as published by the Free Software Foundation (version 2 or later). See also [original-files/COPYRIGHT](the original copyright file).
+
+The cool look for the error pages is made available under the following license:
+
+> Copyright (c) 2023 by Jhey (https://codepen.io/jh3y/pen/MWbvzKb)
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
