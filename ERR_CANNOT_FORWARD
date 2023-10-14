@@ -121,22 +121,6 @@
 			/* margin-bottom: 3rem; */
 			margin-bottom: 0.5rem;
 		}
-/*
-		@-webkit-keyframes swing {
-			0% {
-				--swing-x: -100;
-				--swing-y: -100;
-			}
-
-			50% {
-				--swing-y: 0;
-			}
-
-			100% {
-				--swing-y: -100;
-				--swing-x: 100;
-			}
-		} */
 
 		@keyframes swing {
 			0% {
@@ -176,7 +160,7 @@
 
 		/* initial title */
 		h1 {
-			-webkit-animation: swing var(--speed) infinite alternate ease-in-out;
+			/* -webkit-animation: swing var(--speed) infinite alternate ease-in-out; */
 			animation: swing var(--speed) infinite alternate ease-in-out;
 			font-size: clamp(5rem, 40vmin, 20rem);
 			font-family: 'Open Sans', sans-serif;
@@ -186,13 +170,13 @@
 			transform: translate3d(0, 0, 0vmin);
 			--x: calc(50% + (var(--swing-x) * 0.5) * 1%);
 			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
-			-webkit-background-clip: text;
+			/* -webkit-background-clip: text; */
 			/* color: transparent;*/
 			z-index: 0;
 		}
 
 		h1:after {
-			-webkit-animation: swing var(--speed) infinite alternate ease-in-out;
+			/* -webkit-animation: swing var(--speed) infinite alternate ease-in-out; */
 			animation: swing var(--speed) infinite alternate ease-in-out;
 			content: "ERROR";
 			position: absolute;
