@@ -86,6 +86,30 @@
 			font-weight: 100;
 		}
 
+		.spotlight {
+			animation: swing var(--speed) infinite alternate ease-in-out;
+			font-size: clamp(5rem, 40vmin, 20rem);
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+			margin-bottom: 1rem;
+			letter-spacing: 1rem;
+			transform: translate3d(0, 0, 0vmin);
+			--x: calc(50% + (var(--swing-x) * 0.5) * 1%);
+			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
+			color: transparent;
+		}
+
+		.spotlight:after {
+			animation: swing var(--speed) infinite alternate ease-in-out;
+			content: "error";
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: var(--shadow);
+			filter: blur(1.5vmin);
+			transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
+		}
+
 		.cloak {
 			animation: swing var(--speed) infinite alternate-reverse ease-in-out;
 			height: 100%;
@@ -266,32 +290,43 @@
 			font-size: 10pt;
 			padding-left: 10px;
 		}
+
+		.spotlight:after {
+			content: "cannot forward request";
+		}
 	</style>
 </head>
 <body id="%c">
-	<h1>ERROR</h1>
-	<div class="cloak__wrapper">
-		<div class="cloak__container">
-			<div class="cloak"></div>
-		</div>
+	<div id="titles">
+		<h1>ERROR</h1>
+		<h2>The requested URL could not be retrieved</h2>
 	</div>
-	<div class="info">
-		<div id="titles">
-			<h2>The requested URL could not be retrieved</h2>
+	<hr>
+
+	<div id="content">
+		<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
+
+		<blockquote id="error" class="spotlight">
+			<p><b>Unable to forward this request at this time.</b></p>
+		</blockquote>
+		<div class="cloak__wrapper">
+			<div class="cloak__container">
+				<div class="cloak"></div>
+			</div>
 		</div>
-		<div id="content">
-			<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
-			<blockquote id="error" class="spotlight">
-				<p><b>Unable to forward this request at this time.</b></p>
-			</blockquote>
+		<div class="info">
 			<p>This request could not be forwarded to the origin server or to any parent caches.</p>
+
 			<p>Some possible problems are:</p>
 			<ul>
 				<li id="network-down">An Internet connection needed to access this domains origin servers may be down.</li>
 				<li id="no-peer">All configured parent caches may be currently unreachable.</li>
 				<li id="permission-denied">The administrator may not allow this cache to make direct connections to origin servers.</li>
 			</ul>
+
 			<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
+
+			<br>
 		</div>
 	</div>
 	<hr>
