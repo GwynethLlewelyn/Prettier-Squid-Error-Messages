@@ -65,8 +65,6 @@
 			background: var(--bg);
 			color: var(--color);
 			perspective: 1200px;
-			/* this was not here, but under h1
-			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%; */
 		}
 
 		.mybutton a {
@@ -138,26 +136,6 @@
 			}
 		}
 
-		/* Page basics
-		html body {
-			margin: 0;
-			padding: 0;
-			background: var(--bg);
-			font-size: 16pt;
-			color: var(--color);
-		}
-
-		body:lang(fa) {
-			direction: rtl;
-			font-size: 100%;
-			font-family: Tahoma, Roya, sans-serif;
-			float: right;
-		}
-
-		body:lang(he) {
-			direction: rtl;
-		}*/
-
 		/* initial title */
 		h1 {
 			/* -webkit-animation: swing var(--speed) infinite alternate ease-in-out; */
@@ -170,7 +148,7 @@
 			transform: translate3d(0, 0, 0vmin);
 			--x: calc(50% + (var(--swing-x) * 0.5) * 1%);
 			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
-			/* -webkit-background-clip: text; */
+			-webkit-background-clip: text;
 			/* color: transparent;*/
 			z-index: 0;
 		}
