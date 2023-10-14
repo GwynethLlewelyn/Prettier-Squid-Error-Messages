@@ -56,7 +56,9 @@ body {
 	justify-content: center;
 	background: var(--bg);
 	color: var(--color);
-	perspective: 1200px;
+			perspective: 1200px;
+			/* this was not here, but under h1 */
+			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
 }
 
 .mybutton a {

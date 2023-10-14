@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- already tweaked a LOT! -->
 	<meta charset="UTF-8">
 	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../images/apple-touch-icon.png">
 	<meta name="apple-mobile-web-app-title" content="Squid Cache Error">
@@ -43,6 +44,8 @@
 			background: var(--bg);
 			color: var(--color);
 			perspective: 1200px;
+			/* this was not here, but under h1 */
+			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
 		}
 		a {
 			text-transform: uppercase;
@@ -67,9 +70,10 @@
 			letter-spacing: 1rem;
 			transform: translate3d(0, 0, 0vmin);
 			--x: calc(50% + (var(--swing-x) * 0.5) * 1%);
-			background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
-			-webkit-background-clip: text;
-			color: transparent;
+			/* background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
+			-webkit-background-clip: text;*/
+			/* color: transparent;*/
+			z-index: 0;
 		}
 		h1:after {
 			-webkit-animation: swing var(--speed) infinite alternate ease-in-out;
@@ -81,6 +85,7 @@
 			color: var(--shadow);
 			filter: blur(1.5vmin);
 			transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
+			z-index: -1;
 		}
 		.cloak {
 			animation: swing var(--speed) infinite alternate-reverse ease-in-out;
