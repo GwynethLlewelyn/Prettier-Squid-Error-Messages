@@ -25,7 +25,7 @@
 		 * See LICENSE for details, or https://gwyneth-llewelyn.mit-license.org/.
 		*/
 
-		@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300;400&display=swap");
+		@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;400&display=swap");
 
 		:root {
 			--button: #b3b3b3;
@@ -121,7 +121,7 @@
 			/* margin-bottom: 3rem; */
 			margin-bottom: 0.5rem;
 		}
-
+/*
 		@-webkit-keyframes swing {
 			0% {
 				--swing-x: -100;
@@ -136,7 +136,7 @@
 				--swing-y: -100;
 				--swing-x: 100;
 			}
-		}
+		} */
 
 		@keyframes swing {
 			0% {
