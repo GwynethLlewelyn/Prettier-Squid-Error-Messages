@@ -254,8 +254,6 @@
 		<p>This cache does not support FTP.</p>
 
 		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-
-		<br>
 	</div>
 	<hr>
 	<div id="footer">

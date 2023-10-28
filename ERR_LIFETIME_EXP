@@ -111,7 +111,7 @@
 
 		.info {
 			/* text-align: center; */
-			 line-height: 1.5;
+			line-height: 1.5;
 			/* max-width: clamp(16rem, 90vmin, 25rem); */
 		}
 
@@ -248,18 +248,18 @@
 		<h2>The requested URL could not be retrieved</h2>
 		<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
 
-<blockquote id="error" class="spotlight">
-<p><b>Connection Lifetime Expired</b></p>
-</blockquote>
-<p>Squid has terminated the request because it has exceeded the maximum connection lifetime.</p>
+		<blockquote id="error" class="spotlight">
+			<p><b>Connection Lifetime Expired</b></p>
+		</blockquote>
+		<p>Squid has terminated the request because it has exceeded the maximum connection lifetime.</p>
 
-<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-<br>
-</div>
+		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
+		<br>
+	</div>
 	<hr>
 	<div id="footer">
-<p>Generated %T by %h (%s)</p>
-<!-- %c -->
-</div>
+		<p>Generated %T by %h (%s)</p>
+		<!-- %c -->
+	</div>
 </body>
 </html>

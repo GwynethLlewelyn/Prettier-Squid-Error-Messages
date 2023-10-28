@@ -259,7 +259,6 @@
 		<p>This means that the cache was not able to resolve the hostname presented in the URL. Check if the address is correct.</p>
 
 		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-		<br>
 	</div>
 	<hr>
 	<div id="footer">

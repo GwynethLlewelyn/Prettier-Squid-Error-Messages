@@ -111,7 +111,7 @@
 
 		.info {
 			/* text-align: center; */
-			 line-height: 1.5;
+			line-height: 1.5;
 			/* max-width: clamp(16rem, 90vmin, 25rem); */
 		}
 
@@ -248,20 +248,18 @@
 		<h2>The requested URL could not be retrieved</h2>
 		<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
 
-<blockquote id="error" class="spotlight">
-<p><b>Precondition Failed.</b></p>
-</blockquote>
-<p>This means:</p>
-<blockquote>
-    <p>At least one precondition specified by the HTTP client in the request header has failed.</p>
-</blockquote>
-
-<br>
-</div>
+		<blockquote id="error" class="spotlight">
+			<p><b>Precondition Failed.</b></p>
+		</blockquote>
+		<p>This means:</p>
+		<blockquote>
+			<p><b>At least one precondition specified by the HTTP client in the request header has failed.</b></p>
+		</blockquote>
+	</div>
 	<hr>
 	<div id="footer">
-<p>Generated %T by %h (%s)</p>
-<!-- %c -->
-</div>
+		<p>Generated %T by %h (%s)</p>
+		<!-- %c -->
+	</div>
 </body>
 </html>

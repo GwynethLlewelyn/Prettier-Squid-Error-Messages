@@ -253,7 +253,6 @@
 			<p><b>%f</b></p>
 		</blockquote>
 		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-		<br>
 	</div>
 	<hr>
 	<div id="footer">

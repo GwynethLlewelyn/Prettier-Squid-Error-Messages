@@ -254,8 +254,6 @@
 		<p>This cache will not forward your request because it is trying to enforce a sibling relationship. Perhaps the client at %i is a cache which has been misconfigured.</p>
 
 		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-
-		<br>
 	</div>
 	<hr>
 	<div id="footer">

@@ -111,7 +111,7 @@
 
 		.info {
 			/* text-align: center; */
-			 line-height: 1.5;
+			line-height: 1.5;
 			/* max-width: clamp(16rem, 90vmin, 25rem); */
 		}
 
@@ -252,14 +252,13 @@
 			<p><b>Read Error</b></p>
 		</blockquote>
 
-			<p id="sysmsg">The system returned: <i>%E</i></p>
+		<p id="sysmsg">The system returned: <i>%E</i></p>
 
-			<p>An error condition occurred while reading data from the network. Please retry your request.</p>
+		<p>An error condition occurred while reading data from the network. Please retry your request.</p>
 
-			<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-			<br>
-		</div>
-		<hr>
+		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
+	</div>
+	<hr>
 	<div id="footer">
 		<p>Generated %T by %h (%s)</p>
 		<!-- %c -->

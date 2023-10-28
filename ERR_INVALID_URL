@@ -111,7 +111,7 @@
 
 		.info {
 			/* text-align: center; */
-			 line-height: 1.5;
+			line-height: 1.5;
 			/* max-width: clamp(16rem, 90vmin, 25rem); */
 		}
 
@@ -248,34 +248,33 @@
 		<h2>The requested URL could not be retrieved</h2>
 		<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
 
-                <blockquote id="error" class="spotlight">
-                        <p><b>Invalid URL</b></p>
-                </blockquote>
-                        <p>Some aspect of the requested URL is incorrect.</p>
+		<blockquote id="error" class="spotlight">
+			<p><b>Invalid URL</b></p>
+		</blockquote>
+		<p>Some aspect of the requested URL is incorrect.</p>
 
-                        <p>Some possible problems are:</p>
-                        <ul>
-                                <li>
-                                        <p>Missing or incorrect access protocol (should be <q>http://</q> or similar)</p>
-                                </li>
-                                <li>
-                                        <p>Missing hostname</p>
-                                </li>
-                                <li>
-                                        <p>Illegal double-escape in the URL-Path</p>
-                                </li>
-                                <li>
-                                        <p>Illegal character in hostname; underscores are not allowed.</p>
-                                </li>
-                        </ul>
+		<p>Some possible problems are:</p>
+		<ul>
+			<li>
+				<p>Missing or incorrect access protocol (should be <q>http://</q> or similar)</p>
+			</li>
+			<li>
+				<p>Missing hostname</p>
+			</li>
+			<li>
+				<p>Illegal double-escape in the URL-Path</p>
+			</li>
+			<li>
+				<p>Illegal character in hostname; underscores are not allowed.</p>
+			</li>
+		</ul>
 
-                        <p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-                        <br>
-                </div>
-        	<hr>
+		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
+	</div>
+	<hr>
 	<div id="footer">
-                <p>Generated %T by %h (%s)</p>
-                <!-- %c -->
-        </div>
+		<p>Generated %T by %h (%s)</p>
+		<!-- %c -->
+	</div>
 </body>
 </html>

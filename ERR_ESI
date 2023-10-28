@@ -259,7 +259,6 @@
 		<p>This means that the surrogate was not able to process the ESI template. Please report this error to the webmaster.</p>
 
 		<p>Your webmaster is <a href="mailto:%w">%w</a>.</p>
-		<br>
 	</div>
 	<hr>
 	<div id="footer">

@@ -111,7 +111,7 @@
 
 		.info {
 			/* text-align: center; */
-			 line-height: 1.5;
+			line-height: 1.5;
 			/* max-width: clamp(16rem, 90vmin, 25rem); */
 		}
 
@@ -257,8 +257,8 @@
 		<p>Squid is unable to create a TCP socket, presumably due to excessive load. Please retry your request.</p>
 
 		<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
-		<br>
-		<hr>
+	</div>
+	<hr>
 	<div id="footer">
 		<p>Generated %T by %h (%s)</p>
 		<!-- %c -->
