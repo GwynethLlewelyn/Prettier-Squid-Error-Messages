@@ -309,20 +309,13 @@
 		<blockquote id="error" class="spotlight">
 			<p><b>Cache Access Denied.</b></p>
 		</blockquote>
-		<div class="cloak__wrapper">
-			<div class="cloak__container">
-				<div class="cloak"></div>
-			</div>
-		</div>
-		<div class="info">
 			<p>Sorry, you are not currently allowed to request %U from this cache until you have authenticated yourself.</p>
 
 			<p>Please contact the <a href="mailto:%w%W">cache administrator</a> if you have difficulties authenticating yourself.</p>
 
 			<br>
 		</div>
-	</div>
-	<hr>
+		<hr>
 	<div id="footer">
 		<p>Generated %T by %h (%s)</p>
 		<!-- %c -->

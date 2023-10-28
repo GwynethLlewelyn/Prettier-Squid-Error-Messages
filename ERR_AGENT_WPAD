@@ -307,12 +307,6 @@
 		<blockquote id="error" class="spotlight">
 			<p>Your Web Browser configuration needs to be corrected to use this network.</p>
 		</blockquote>
-		<div class="cloak__wrapper">
-			<div class="cloak__container">
-				<div class="cloak"></div>
-			</div>
-		</div>
-		<div class="info">
 			<p>How to find these settings in your browser:</p>
 
 			<div id="firefox">
@@ -342,8 +336,7 @@
 			<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
 			<br>
 		</div>
-	</div>
-	<hr>
+		<hr>
 	<div id="footer">
 		<p>Generated %T by %h (%s)</p>
 		<!-- %c -->

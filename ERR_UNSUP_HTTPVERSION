@@ -309,20 +309,13 @@
 <blockquote id="error" class="spotlight">
 <p><b>Unsupported HTTP version</b></p>
 </blockquote>
-<div class="cloak__wrapper">
-            <div class="cloak__container">
-                <div class="cloak"></div>
-            </div>
-        </div>
-        <div class="info">
 <p>This Squid does not accept the HTTP version you are attempting to use.</p>
 
 <p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
 <br>
 </div>
-</div>
-<hr>
-<div id="footer">
+	<hr>
+	<div id="footer">
 <p>Generated %T by %h (%s)</p>
 <!-- %c -->
 </div>

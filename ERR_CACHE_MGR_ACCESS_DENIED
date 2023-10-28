@@ -309,12 +309,6 @@
 		<blockquote id="error" class="spotlight">
 			<p><b>Cache Manager Access Denied.</b></p>
 		</blockquote>
-		<div class="cloak__wrapper">
-			<div class="cloak__container">
-				<div class="cloak"></div>
-			</div>
-		</div>
-		<div class="info">
 			<p>Sorry, you are not currently allowed to request %U from this cache manager until you have authenticated yourself.</p>
 
 			<p>
@@ -324,8 +318,7 @@
 
 			<br>
 		</div>
-	</div>
-	<hr>
+		<hr>
 	<div id="footer">
 		<p>Generated %T by %h (%s)</p>
 		<!-- %c -->
